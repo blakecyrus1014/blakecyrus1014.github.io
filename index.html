@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Rising from the Wreck: How One Community Rebuilt After Disaster</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="A nonfiction article for 9th-grade readers: Introduction + three multi-paragraph sections + conclusion, with headings, images, and captions." />
+  <meta property="og:title" content="Rising from the Wreck: How One Community Rebuilt After Disaster" />
+  <meta property="og:description" content="A clear, student-friendly nonfiction article with sections, images, and captions." />
+  <meta property="og:type" content="article" />
+  <meta name="theme-color" content="#0b5ea5">
+
+  <style>
+    :root{
+      --ink:#0b2038;
+      --accent:#0b5ea5;
+      --muted:#6c757d;
+      --bg:#ffffff;
+      --bg-alt:#f6f8fa;
+      --maxw: 860px;
+    }
+
+    /* Reset-ish */
+    *,*::before,*::after{ box-sizing:border-box; }
+    html{ font-size:16px; }
+    body{
+      margin:0; color:var(--ink); background:var(--bg);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6;
+    }
+
+    header.hero{
+      background:linear-gradient(135deg, #0b5ea5 0%, #0b2038 100%);
+      color:#fff;
+      padding: clamp(2rem, 4vw, 4rem) 1.25rem;
+    }
+    header .wrap, main .wrap, footer .wrap{
+      max-width:var(--maxw);
+      margin-inline:auto;
+    }
+    h1{
+      line-height:1.15;
+      margin:0 0 .5rem 0;
+      font-size: clamp(1.8rem, 4.6vw, 2.4rem);
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+    .subtitle{
+      margin:0;
+      opacity:.95;
+      font-size:clamp(1rem, 2.6vw, 1.1rem);
+    }
+
+    /* Sticky local table of contents */
+    nav.toc{
+      position:sticky; top:0; z-index: 10;
+      background: #ffffffcc;
+      backdrop-filter: saturate(120%) blur(6px);
+      border-bottom:1px solid #e5e7eb;
+    }
+    nav.toc .wrap{
+      display:flex; gap:.75rem; align-items:center; padding:.5rem 1.25rem;
+      max-width: min(100%, var(--maxw));
+      overflow:auto;
+    }
+    nav.toc a{
+      color:var(--accent); text-decoration:none; font-weight:600; white-space:nowrap;
+      padding:.35rem .6rem; border-radius:.5rem; border:1px solid transparent;
+    }
+    nav.toc a:hover, nav.toc a:focus{
+      outline:none; border-color:#cfe4f7; background:#eef6fd;
+    }
+
+    main.article{
+      padding: 1.5rem 1.25rem 2.5rem;
+      background: var(--bg);
+    }
+    main.article .wrap{
+      max-width: var(--maxw);
+    }
+
+    section{
+      padding: clamp(1rem, 2.5vw, 1.25rem) 0;
+      border-bottom:1px dashed #e5e7eb;
+    }
+    section:last-of-type{ border-bottom:none; }
+
+    h2{
+      margin:.25rem 0 .25rem;
+      font-size: clamp(1.35rem, 3.4vw, 1.6rem);
+      line-height:1.25;
+    }
+    h3{
+      margin:.35rem 0 1rem;
+      font-size: clamp(1.05rem, 2.6vw, 1.15rem);
+      color: var(--accent);
+      letter-spacing:.2px;
+    }
+
+    p{ margin: 0 0 1rem 0; }
+
+    figure{
+      margin: 0 0 1rem 0;
+      border:1px solid #e5e7eb; border-radius: .6rem; overflow:hidden; background:var(--bg-alt);
+    }
+    figure img{
+      display:block; width:100%; height:auto; aspect-ratio: 16/9; object-fit: cover;
+      background: linear-gradient(135deg,#e9ecef,#f8f9fa);
+    }
+    figcaption{
+      padding:.6rem .9rem; color:var(--muted); font-size:.95rem; border-top:1px solid #e5e7eb;
+    }
+
+    /* Pull-quote / callout option, if needed later */
+    .callout{
+      background:#eef6fd; border-left:4px solid var(--accent);
+      padding:.75rem 1rem; margin:1rem 0; border-radius:.25rem;
+    }
+
+    footer.site{
+      padding:1.25rem; background:var(--bg-alt); border-top:1px solid #e5e7eb; color:#344054;
+      font-size:.95rem;
+    }
+    footer a{ color:var(--accent); text-decoration:none; }
+    footer a:hover{ text-decoration:underline; }
+
+    /* Better focus for accessibility */
+    :focus-visible{ outline: 3px solid #94c7f7; outline-offset:2px; border-radius:.2rem; }
+
+    /* Print-friendly */
+    @media print{
+      nav.toc{ display:none; }
+      header.hero{ color:#000; background:#fff; border-bottom:1px solid #000; }
+      a{ color:#000; text-decoration:none; }
+      figure{ page-break-inside: avoid; }
+      section{ break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <h1>Rising from the Wreck: How One Community Rebuilt After Disaster</h1>
+      <p class="subtitle">Nonfiction • 9th Grade Appropriate • Introduction + 3 Sections + Conclusion • Text Features Included</p>
+    </div>
+  </header>
+
+  <nav class="toc" aria-label="On-page navigation">
+    <div class="wrap" role="list">
+      <a href="#introduction" role="listitem">Introduction</a>
+      <a href="#section-1" role="listitem">Section 1: The Storm Hits</a>
+      <a href="#section-2" role="listitem">Section 2: Finding Strength Together</a>
+      <a href="#section-3" role="listitem">Section 3: Rebuilding with Purpose</a>
+      <a href="#conclusion" role="listitem">Conclusion</a>
+    </div>
+  </nav>
+
+  <main class="article" id="main">
+    <article class="wrap" role="article" aria-labelledby="title">
+      <!-- INTRODUCTION -->
+      <section id="introduction" aria-labelledby="intro-h2">
+        <h2 id="intro-h2">Introduction</h2>
+        <p>When natural disasters strike, they often leave behind more than physical destruction—they leave questions, fears, and uncertainty about how life will move forward. For the residents of Millhaven, a small riverside town, the hurricane that hit without warning changed their community overnight. But in the weeks and months that followed, something else emerged: a story of resilience, cooperation, and extraordinary determination.</p>
+        <p>The people of Millhaven did not simply survive a catastrophe—they transformed it into an opportunity to strengthen their bonds and rebuild with purpose. Their journey reveals not only the power of community, but the quiet courage found in everyday choices.</p>
+      </section>
+
+      <!-- SECTION 1 -->
+      <section id="section-1" aria-labelledby="s1-h2">
+        <h2 id="s1-h2">Section 1 — The Storm Hits</h2>
+        <h3>A Town Caught Off Guard</h3>
+
+        <figure>
+          <!-- Replace the src with your real image URL -->
+          <img src="https://images.unsplash.com/photo-1505012907203-6c074c0b7f12?q=80&w=1600&auto=format&fit=crop" alt="Flooded main street with standing water and damaged storefronts." />
+          <figcaption>Floodwaters cover downtown Millhaven the morning after the storm.</figcaption>
+        </figure>
+
+        <p>When the Category 4 hurricane tore through the region, Millhaven was caught completely off guard. Forecasts had hinted at heavy rain, but few expected the violent winds or the speed at which the river would rise. Within hours, streets became rushing channels of water, carrying branches, trash bins, and pieces of broken fences. Residents stood helpless at windows as the storm raged, each gust seeming stronger than the last.</p>
+        <p>As the rain intensified, emergency alerts instructed families to evacuate—yet for many, it was too late. Cars couldn’t pass through the deepening water, and downed power lines made some streets dangerous to cross. Parents gathered their children in interior rooms, hoping the worst would pass quickly. Others attempted to salvage belongings, stacking boxes on tables and carrying photo albums to attics in the dim light of flashlights.</p>
+        <p>By dawn, the full extent of the devastation became clear. Trees lay across rooftops, windows were shattered, and several homes were partially submerged. The familiar landscape of Millhaven was transformed into a scene of chaos. But beneath the shock and grief, a new urgency took hold: people needed help, and the town had to respond.</p>
+      </section>
+
+      <!-- SECTION 2 -->
+      <section id="section-2" aria-labelledby="s2-h2">
+        <h2 id="s2-h2">Section 2 — Finding Strength Together</h2>
+        <h3>Neighbors Become Lifelines</h3>
+
+        <figure>
+          <!-- Replace the src with your real image URL -->
+          <img src="https://images.unsplash.com/photo-1585366119957-e9730b6d0f37?q=80&w=1600&auto=format&fit=crop" alt="Community volunteers sorting relief supplies in a gym." />
+          <figcaption>Local volunteers distribute water and blankets during the first week after the storm.</figcaption>
+        </figure>
+
+        <p>In the aftermath, the first signs of hope came not from distant rescue teams, but from within the neighborhood. Residents who had sustained less damage ventured out with backpacks, tools, and bottled water. They waded through flooded streets to check on elderly neighbors and families with young children. As cell service flickered in and out, word spread quickly about who needed help and which homes had become unsafe.</p>
+        <p>Soon, the high school gym was transformed into a temporary shelter. Teachers, many of whom had suffered losses themselves, organized tables of donated supplies—diapers, batteries, canned food, blankets. Students helped unload trucks and set up cots, their exhaustion overshadowed by an unspoken determination to serve the very people they’d grown up with.</p>
+        <p>Acts of kindness multiplied day by day. A retired electrician worked long hours restoring power to damaged breakers. A group of teenagers spent entire afternoons clearing debris from driveways, refusing payment from grateful homeowners. Even families who had lost nearly everything found ways to contribute—sharing food, offering comfort, or simply sitting with those whose grief felt unbearable.</p>
+        <div class="callout" role="note" aria-label="Key idea">
+          <strong>Key idea:</strong> Though Millhaven had been shaken to its core, these early weeks revealed the strength of a community that refused to let hardship define them.
+        </div>
+      </section>
+
+      <!-- SECTION 3 -->
+      <section id="section-3" aria-labelledby="s3-h2">
+        <h2 id="s3-h2">Section 3 — Rebuilding with Purpose</h2>
+        <h3>A Stronger Future Ahead</h3>
+
+        <figure>
+          <!-- Replace the src with your real image URL -->
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1600&auto=format&fit=crop" alt="Construction crews and residents repairing homes and streets." />
+          <figcaption>Millhaven residents work with volunteers to rebuild damaged homes.</figcaption>
+        </figure>
+
+        <p>As weeks turned into months, Millhaven entered a new stage of recovery—one focused not just on cleaning up, but on rebuilding smarter and stronger. With funding from state programs and support from nonprofit organizations, residents began to reconstruct homes with reinforced roofing, elevated foundations, and improved drainage systems designed to guard against future storms.</p>
+        <p>Community planning meetings—once sparsely attended—became hubs of discussion and collaboration. Residents voiced their hopes and concerns, engineers presented flood‑resistant designs, and students from the high school’s environmental science club shared research on sustainable storm‑water management. The rebuilding process became a collective learning experience, blending scientific insight with personal storytelling.</p>
+        <p>Not all progress was measured in construction. Families formed support groups to navigate the emotional toll of loss. Local businesses partnered with neighboring towns to restock supplies and reopen storefronts. Even the youngest residents found ways to heal—children painted murals on temporary walls, each one celebrating themes of unity, hope, and renewal.</p>
+      </section>
+
+      <!-- CONCLUSION -->
+      <section id="conclusion" aria-labelledby="conc-h2">
+        <h2 id="conc-h2">Conclusion</h2>
+        <p>Millhaven’s story is not simply about enduring a natural disaster—it is about discovering the resilience that emerges when people stand together. The storm may have reshaped the physical landscape, but it also revealed a deeper truth: adversity can strengthen bonds, inspire innovation, and remind a community of its shared humanity.</p>
+        <p>As life in Millhaven continues to move forward, the marks of the hurricane remain visible. Yet for many residents, those scars are symbols—not of destruction, but of how far they’ve come. Their journey proves that rebuilding is more than repairing structures. It is the act of choosing hope again and again, even when the path forward is uncertain.</p>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site" role="contentinfo">
+    <div class="wrap">
+      <p><strong>Classroom Note:</strong> This page was created for educational use (9th grade). You may replace images with your own and adjust headings as needed.</p>
+      <p>© <span id="year"></span> Millhaven Learning Project</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
